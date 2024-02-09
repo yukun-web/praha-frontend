@@ -2,7 +2,7 @@ import { Card, CardTitle, Dd, Dl, Dt, Link } from '../../atoms'
 
 export const SampleCodeCard = ({ title, framework, language, testingFramework }) => {
   return (
-    <div className='flex-1'>
+    <div className='min-w-[240px] flex-1'>
       <Card header={`${language}開発者向け`}>
         <CardTitle>{title}</CardTitle>
         <Dl>

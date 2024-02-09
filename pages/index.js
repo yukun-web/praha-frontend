@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <MainHeader />
-      <div className='flex flex-col items-center gap-4 py-4'>
+      <div className='flex flex-col items-center gap-4 p-4 lg:px-0'>
         <WhatIsThisSite />
         <StructureOfThisSite />
         <SampleCode />
