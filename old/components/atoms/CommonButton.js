@@ -13,7 +13,7 @@ export const CommonButton = ({
     }
 
     if (color === 'red') {
-      return 'bg-red-500 text-white'
+      return 'bg-red-600 text-white'
     }
 
     return 'bg-blue-500 text-white'
@@ -31,9 +31,17 @@ export const CommonButton = ({
     return 'px-4 py-2.5 rounded-md'
   }, [size])
 
+  const elevatingClassNames = useMemo(() => {
+    if (disabled) {
+      return ''
+    }
+
+    return 'shadow'
+  }, [disabled])
+
   const classNames = useMemo(
-    () => [coloringClassNames, sizingClassNames].join(' '),
-    [coloringClassNames, sizingClassNames]
+    () => [elevatingClassNames, coloringClassNames, sizingClassNames].join(' '),
+    [coloringClassNames, elevatingClassNames, sizingClassNames]
   )
 
   return (
