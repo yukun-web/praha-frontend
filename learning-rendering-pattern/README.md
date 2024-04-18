@@ -50,3 +50,16 @@ SSR のキャッシュとして SSG を使ってるとも考えられる。
 あと、 Vercel + Next.js にベンダーロックインする？（似たようなことを SSR + stale-while-revalidate でもできるらしい）
 
 ## 課題２
+
+App Router だといろいろ楽ちんだった。
+ビルドに ssr.html が生成されていないことを確認。 
+
+![img.png](img.png)
+
+## 課題３
+
+* 週1回更新されるブログ: SSG
+* ユーザーのコメントが随時追加されるクックパッドのようなサービス: ISR
+* freeeのような会計サービス: SSR
+* 経営指標（OKRやKPIなど）を管理する社内サービス: CSR
+* 社内SNS: ISR or CSR
