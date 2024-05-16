@@ -18,3 +18,9 @@
 * LP みたいに決まったデータをテンプレートに流し込んでいくようなサイトはページ単位で取得した方がわかりやすいかも
 
 ### 課題２
+
+https://github.com/yukun-web/praha-frontend/blob/main/learning-rendering-pattern/src/app/csr/Now.tsx
+
+### 課題３
+
+https://github.com/yukun-web/praha-frontend/blob/main/learning-rendering-pattern/src/app/csr/Now.stories.ts
